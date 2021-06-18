@@ -26,3 +26,7 @@ INSERT INTO tb_resource (title, description, position, img_URI, type, offer_id) 
 INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 1', 'Neste capítulo vamos começar', 1, 'https://github.com/grasielaGomes/dslearn/blob/c0ec173ccf80080186d9ae709e8b674cce1c3f52/images/1.jpg', 1, null);
 INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 2', 'Neste capítulo vamos continuar', 2, 'https://github.com/grasielaGomes/dslearn/blob/c0ec173ccf80080186d9ae709e8b674cce1c3f52/images/1.jpg', 1, 1);
 INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 3', 'Neste capítulo vamos finalizar', 3, 'https://github.com/grasielaGomes/dslearn/blob/c0ec173ccf80080186d9ae709e8b674cce1c3f52/images/1.jpg', 1, 2);
+
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2021-07-13T13:00:00Z', null, true, false);
+INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2021-07-13T13:00:00Z', null, true, false);
+
