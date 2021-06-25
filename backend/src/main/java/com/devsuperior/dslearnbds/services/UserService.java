@@ -2,6 +2,7 @@ package com.devsuperior.dslearnbds.services;
 
 import java.util.Optional;
 
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +36,6 @@ public class UserService implements UserDetailsService {
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		
 		User user = repository.findByEmail(username);
-
 		
 		if (user == null) {
 			logger.error("User not found: " + username);
