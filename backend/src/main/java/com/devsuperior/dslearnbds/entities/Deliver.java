@@ -18,6 +18,7 @@ import com.devsuperior.dslearnbds.entities.enums.DeliverStatus;
 @Entity
 @Table(name = "tb_deliver")
 public class Deliver implements Serializable {
+	
 	private static final long serialVersionUID = 1L;
 
 	@Id
